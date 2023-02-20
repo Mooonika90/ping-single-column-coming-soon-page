@@ -1,0 +1,174 @@
+:root {
+	/* Primary */
+
+	--blue: hsl(223, 87%, 63%);
+
+	/* Secondary */
+
+	--pale-blue: hsl(223, 100%, 88%);
+	--light-red: hsl(354, 100%, 66%);
+	--white: hsl(254, 48%, 95%);
+
+	/* Neutral */
+
+	--gray: hsl(0, 0%, 59%);
+	--very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.15rem;
+	font-family: 'Libre Franklin', sans-serif;
+	text-align: center;
+	height: 100vh;
+}
+/* error style */
+.error {
+	display: none;
+	margin: 0.5rem 0;
+	color: var(--light-red);
+	font-size: 0.8rem;
+}
+.active {
+	display: block;
+}
+.error-info:focus {
+	border: 1px solid var(--light-red);
+	outline: none;
+}
+
+/* main style */
+.chart {
+	width: 90%;
+}
+
+.logo {
+	margin-bottom: 2rem;
+}
+.title {
+	font-weight: 400;
+	color: var(--gray);
+	font-size: 1.8rem;
+}
+
+.title-bold {
+	font-weight: 700;
+	color: black;
+}
+
+.wrapper {
+	margin: 5rem auto 2rem;
+	max-width: 35rem;
+}
+
+.text {
+	margin: 1.5rem 0 2.5rem;
+}
+.input-box {
+	margin-bottom: 4rem;
+}
+
+.address,
+.btn {
+	border-radius: 2rem;
+	padding: 0.5rem 2rem;
+	width: 80%;
+	font-size: 1.2rem;
+	border: none;
+}
+.address {
+	border: 1px solid var(--pale-blue);
+}
+::placeholder {
+	color: var(--pale-blue);
+}
+.btn {
+	margin-top: 1rem;
+	color: var(--white);
+	background-color: var(--blue);
+	cursor: pointer;
+	transition: color 0.5s, background-color 0.5s;
+}
+
+.btn:hover {
+	background-color: var(--pale-blue);
+	color: var(--blue);
+}
+.chart {
+	margin-bottom: 4rem;
+}
+
+i {
+	border-radius: 50%;
+	border: 1px solid var(--pale-blue);
+	padding: 0.6rem;
+	color: var(--blue);
+	margin-right: 0.8rem;
+	transition: color 0.5s, background-color 0.5s;
+}
+i:hover {
+	color: var(--white);
+	background-color: var(--blue);
+}
+.footer-main {
+	margin: 1rem 0;
+	color: var(--gray);
+	font-size: 1rem;
+}
+.footer-info {
+	font-size: 0.7rem;
+}
+a {
+	text-decoration: none;
+	color: var(--blue);
+	font-weight: 700;
+}
+
+@media (min-width: 576px) {
+	.title {
+		font-size: 3rem;
+	}
+
+	.input-box {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.btn,
+	.address {
+		padding: 1rem 2rem;
+	}
+	.box {
+		width: 70%;
+	}
+	.btn {
+		margin-top: 0;
+		margin-left: 1rem;
+		width: 30%;
+	}
+	.address {
+		width: 100%;
+	}
+
+	.logo {
+		width: 20%;
+	}
+	.chart {
+		width: 100%;
+	}
+	i {
+		font-size: 1.4rem;
+		padding: 0.8rem;
+	}
+	.footer-main {
+		font-size: 1.1rem;
+	}
+	.footer-info {
+		font-size: 0.8rem;
+	}
+}
